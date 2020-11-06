@@ -46,4 +46,4 @@ sudo bash menu_en.sh
 
 Done !!
 
-## First time to use, please install depends from Menu
+## First time to use, please install depends from menu
