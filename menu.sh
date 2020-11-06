@@ -23,7 +23,7 @@ echo ""
 echo "!. 清理目录"
 echo "#. 退出程序"
 echo "*. 关于该工具&帮助"
-echo "￥. 安装依赖"
+echo "¥. 安装依赖"
 
 read -p "请输入选项：" c
 
@@ -49,7 +49,7 @@ elif [ "$c" == "!" ]; then
 	bash ./scripts/clean.sh
 elif [ "$c" == "*" ]; then 
 	bash ./scripts/about.sh
-elif [ "$c" == "￥" ]; then 
+elif [ "$c" == "¥" ]; then 
 	bash ./setup.sh
 else
 	echo "好像输入不正确呢"
