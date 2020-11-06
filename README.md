@@ -23,3 +23,27 @@ sudo bash menu.sh
 即可使用
 
 ## 首次使用请在菜单内安装依赖，否则无法使用
+
+## How to use?
+Download Linux Deploy on yours devices.
+
+
+connect to SSH
+
+type in
+
+```bash
+git clone https://github.com/wwrrj/Android-unpack-tool.git
+```
+
+```bash
+cd Android-unpack-tool
+```
+
+```bash
+sudo bash menu_en.sh
+```
+
+Done !!
+
+## First time to use, please install depends from Menu
