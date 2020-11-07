@@ -54,7 +54,7 @@ elif [ "$c" == "1" ]; then
 elif [ "$c" == "2" ]; then 
   bash ./scripts/unpacksdat.sh
 elif [ "$c" == "3" ]; then 
-  bash ./scripts/unpackimg1.sh
+  bash ./scripts/unpacksimg.sh
 elif [ "$c" == "4" ]; then 
   bash ./scripts/unpackvbr.sh
 elif [ "$c" == "5" ]; then 
