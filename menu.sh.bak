@@ -82,8 +82,6 @@ elif [ "$c" == "15" ]; then
   bash ./scripts/vbr2dat.sh
 elif [ "$c" == "16" ]; then 
   bash ./scripts/vdat2br.sh
-elif [ "$c" == "update" ]; then 
-  bash ./scripts/update.sh
 #elif [ "$c" == "17" ]; then 
 #  bash ./scripts/img2sdat.sh
 #elif [ "$c" == "18" ]; then 

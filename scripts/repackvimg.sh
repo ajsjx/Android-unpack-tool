@@ -9,11 +9,11 @@ echo "
 
 _________________
 
-sudo `du -sh ./IMG/out/vendor | awk '{print $1}'`
+`du -sh ./IMG/out/vendor | awk '{print $1}'`
 
-sudo `du -sm ./IMG/out/vendor | awk '{print $1}' | sed 's/$/&M/'`
+`du -sm ./IMG/out/vendor | awk '{print $1}' | sed 's/$/&M/'`
 
-sudo `du -sb ./IMG/out/svendor | awk '{print $1}' | sed 's/$/&B/'`
+`du -sb ./IMG/out/svendor | awk '{print $1}' | sed 's/$/&B/'`
 _________________
 
 使用G为单位打包时必须带单位且为整数
@@ -42,10 +42,10 @@ sudo sed -i '1d' ./IMG/out/error.log
 
 if [ -s ./IMG/out/error.log ];then
  echo "打包失败，当前错误日志为: "
- sudo cat ./IMG/out/error.log
+ cat ./IMG/out/error.log
 else
  echo "打包完成"
- sudo rm -rf ./IMG/out/error.log
+ rm -rf ./IMG/out/error.log
  mv ./IMG/out/vendor_new.img  ./IMG/vendor_new.img
  echo "已将vendor_new.img输出至IMG文件夹"
 fi

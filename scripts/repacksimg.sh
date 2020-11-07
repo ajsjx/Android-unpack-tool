@@ -9,11 +9,11 @@ echo "
 
 _________________
 
-sudo `du -sh ./IMG/out/system | awk '{print $1}'`
+`du -sh ./IMG/out/system | awk '{print $1}'`
 
-sudo `du -sm ./IMG/out/system | awk '{print $1}' | sed 's/$/&M/'`
+`du -sm ./IMG/out/system | awk '{print $1}' | sed 's/$/&M/'`
 
-sudo `du -sb ./IMG/out/system | awk '{print $1}' | sed 's/$/&B/'`
+`du -sb ./IMG/out/system | awk '{print $1}' | sed 's/$/&B/'`
 _________________
 
 使用G为单位打包时必须带单位且为整数
@@ -38,14 +38,14 @@ fi
 #./bin/mke2fs -L / -t ext4 -b 4096 ./ZIP/out/system.img $size
 #./bin/e2fsdroid -e -T 0 -S ./ZIP/out/config/system_file_contexts -C ./ZIP/out/config/system_fs_config  -a /system -f ./ZIP/out/system ./ZIP/out/system.img
 ./bin/mkuserimg_mke2fs.sh "./IMG/out/system/" "./IMG/out/system_new.img" ext4 "/system" $ssize -j "0" -T "1230768000" -C "./IMG/out/config/system_fs_config" -L "system" "./IMG/out/config/system_file_contexts" 2> ./IMG/out/error.log 
-sudo sed -i '1d' ./IMG/out/error.log
+sed -i '1d' ./IMG/out/error.log
 
 if [ -s ./IMG/out/error.log ];then
  echo "打包失败，当前错误日志为: "
- sudo cat ./IMG/out/error.log
+ cat ./IMG/out/error.log
 else
  echo "打包完成"
- sudo rm -rf ./IMG/out/error.log
+ rm -rf ./IMG/out/error.log
  mv ./IMG/out/system_new.img  ./IMG/system_new.img
  echo "已将system_new.img输出至IMG文件夹"
 fi
