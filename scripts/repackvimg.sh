@@ -13,7 +13,7 @@ _________________
 
 `du -sm ./IMG/out/vendor | awk '{print $1}' | sed 's/$/&M/'`
 
-`du -sb ./IMG/out/svendor | awk '{print $1}' | sed 's/$/&B/'`
+`du -sb ./IMG/out/vendor | awk '{print $1}' | sed 's/$/&B/'`
 _________________
 
 使用G为单位打包时必须带单位且为整数
