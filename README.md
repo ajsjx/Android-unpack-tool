@@ -6,7 +6,7 @@
 git clone https://github.com/wwrrj/Android-unpack-tool.git
 ```
 ## 如何使用？
-手机端安装好Linux Deploy
+手机端安装好Linux Deploy中Ubuntu20.04版本
 
 如何安装这里不再赘述
 
@@ -23,7 +23,7 @@ cd Android-unpack-tool
 ```
 
 ```bash
-sudo bash menu.sh
+bash menu.sh
 ```
 
 即可使用
